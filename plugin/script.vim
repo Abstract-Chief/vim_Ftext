@@ -103,7 +103,7 @@ function! _SetInfoInPattern()
    call setline(4,l:cc."                     %type <type> %user <username> %time <12:56>")
    call setline(5,l:cc."                     %date1 <Mon 01 Apr 2024 12:53:10 PM CEST>")
    call setline(6,l:cc."                     %date2 <2024-04-1> %date3 <Monday>")
-   call setline(6,l:cc."                     %pos --set cursor on last %pos in file")
+   call setline(7,l:cc."                     %pos --set cursor on last %pos in file")
 endfunction
 function! SetBaseTextFull()
    call _CheckCreateBaseStorage()
