@@ -12,7 +12,7 @@
 - %time <12:56>
 - %date1 <Mon 01 Apr 2024 12:53:10 PM CEST>
 - %date2 <2024-04-1>
-- %date3 <Monday>
+- %date3 < Monday >
 - %pos --set cursor on last %pos in file
 # Пример использования 
   ![image](https://github.com/Abstract-Chief/vim_Ftext/assets/92479577/d5daea8d-b677-41f6-b825-32c7c8e83f99)
