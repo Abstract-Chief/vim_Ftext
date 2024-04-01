@@ -117,8 +117,6 @@ function! SetBaseText()
    execute 'sp '.g:VimBaseTextUserPath."pattern.".l:type.".pat"
    call _SetInfoInPattern()
 endfunction
-
-"autocmd BufWritePre,BufRead *.{c,cpp,h,hpp,py} :normal gg=G
 autocmd BufNewFile * :call _AutoCommandSetBaseText()
 
 
