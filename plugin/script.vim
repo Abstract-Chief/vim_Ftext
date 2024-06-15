@@ -73,7 +73,7 @@ function! _CompliteBaseText(list,symbols)
    return l:result
 endfunction
 function! _AutoCommandSetBaseText()
-   let l:SymbolName={"%name": _GetNameFromBuf(bufname(),0),"%pname": _GetNameFromBuf(bufname(),1),"%uname":toupper(_GetNameFromBuf(bufname(),1)),"%type": _GetTypeFromName(bufname()),"%user": $USER,"%date1": strftime("%c"),                    "%date2":strftime('%Y-%m-%d'),"%date3":strftime('%A'),"%time":strftime("%H:%M")}
+   let l:SymbolName={"%name": _GetNameFromBuf(bufname(),0),"%pname": _GetNameFromBuf(bufname(),1),"%uname":toupper(_GetNameFromBuf(bufname(),0)),"%type": _GetTypeFromName(bufname()),"%user": $USER,"%date1": strftime("%c"),                    "%date2":strftime('%Y-%m-%d'),"%date3":strftime('%A'),"%time":strftime("%H:%M")}
    let l:list=_GetBaseText(l:SymbolName["%type"])
    if l:list==[]
       return 0
