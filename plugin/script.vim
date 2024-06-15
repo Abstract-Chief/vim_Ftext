@@ -47,6 +47,9 @@ function! _GetBaseText(type)
 endfunction
 
 function! _CompliteLineBase(line,symbols)
+   if line==''
+      return " "
+   endif
    for i in a:line
       if i!=' ' && i!=g:VimBaseTextCommenter
          break
