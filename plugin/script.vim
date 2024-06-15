@@ -47,7 +47,6 @@ function! _GetBaseText(type)
 endfunction
 
 function! _CompliteLineBase(line,symbols)
-   echo "line:".a:line
    if a:line==""
       return " "
    endif
@@ -90,7 +89,6 @@ function! _AutoCommandSetBaseText()
          let user_pos=[i+1,l:mr-3]
          let l:new_list[i]=substitute(l:new_list[i],"%pos","","g")
       endif
-      echo "line:".l:new_list[i]
       call setline(i+1,l:new_list[i])
    endfor
    call cursor(l:user_pos[0],l:user_pos[1])
